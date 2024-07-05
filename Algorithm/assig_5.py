@@ -5,3 +5,5 @@ def solution(num1, num2):
        answer = -1
 
     return answer
+
+print(solution(4,4))
