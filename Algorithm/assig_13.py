@@ -7,5 +7,3 @@ def solution(n):
         answer.append(int(f))
     answer = sum(answer)
     return answer
-
-
