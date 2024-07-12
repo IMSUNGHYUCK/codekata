@@ -7,7 +7,7 @@ def solution(n):
     else:
         return -1
 
-print(solution(4))
+print(solution())
 
 
 num = range(1,90)
