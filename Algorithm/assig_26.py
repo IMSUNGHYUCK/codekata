@@ -1,10 +1,18 @@
-def solution(absolutes, signs):
-    answer = []
-    for i in range(len(signs)):
-        if signs[i]:
-            answer.append(absolutes[i])
-        else:
-            answer.append(-absolutes[i])
-    return sum(answer)
+# def solution(phone_number):
+#     # 뒷 4자리를 제외한 나머지를 *로 변환
+#     masked_part = '*' * (len(phone_number) - 4)
+#     # 뒷 4자리
+#     visible_part = phone_number[-4:]
+#     # 결합하여 반환
+#     return masked_part + visible_part
+#
+# # 테스트 예시
+# print(solution("01033334444"))  # "*******4444"
+# print(solution("027778888"))    # " *****8888"
 
-print(solution([4, 7, 12], [True, False, True]))
+
+phone_number = "01033334444"
+masked_part = '*' * (len(phone_number) - 4)
+
+
+print(masked_part)
