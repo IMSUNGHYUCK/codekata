@@ -1,10 +1,10 @@
-def solution(absolutes, signs):
+def solution(arr, divisor):
     answer = []
-    for i in range(len(signs)):
-        if signs[i]:
-            answer.append(absolutes[i])
-        else:
-            answer.append(-absolutes[i])
-    return sum(answer)
+    for i in arr:
+        if i % divisor == 0:
+            answer.append(i)
+    if not answer:
+        answer.append(-1)
 
-print(solution([4, 7, 12], [True, False, True]))
+    answer.sort()
+    return answer
