@@ -3,4 +3,4 @@ def solution(n):
     pattern = "수박" * (n // 2) + "수" * (n % 2)
     return pattern
 
-print(solution(6))
+print(solution(7))

@@ -12,4 +12,4 @@ def solution(x):
 
     return answer
 
-print(solution(9))
+print(solution(50))
